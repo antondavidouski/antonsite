@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Test</h1>
+
+<p id="test"> Hello</p>
+
+<script>
+var person = {fname:"Anton", lname:"Davidouski", age:15};
+
+var text = "";
+var x;
+for (x in person) {
+  text += (person[x] + ' ');
+}
+
+document.getElementById('test').innerHTML = text
+</script>
+
+</body>
+</html> 
+
