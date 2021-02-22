@@ -4,14 +4,17 @@
 
 <h1>Calculator</h1>
 
-<p id="test"> Hello</p>
+<p id="test"></p>
 
-<script>
-var num1 = promt('Pick a number','');
-var num2 = promt('Pick another number','');
-var answer = num1 + num2;
+<script type = 'text/javascript'>
+var num1 = prompt('Pick a number');
+var num2 = prompt('Pick another number');
+if (num2 != null) {
+  var answer = num1 + num2;
+  document.getElementById('test').innerHTML = answer
 
-document.getElementById('test').innerHTML = answer
+}
+
 </script>
 
 </body>
