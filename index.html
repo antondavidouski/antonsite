@@ -2,20 +2,16 @@
 <html>
 <body>
 
-<h1>JavaScript Test</h1>
+<h1>Calculator</h1>
 
 <p id="test"> Hello</p>
 
 <script>
-var person = {fname:"Anton", lname:"Davidouski", age:15};
+var num1 = promt('Pick a number')
+var num2 = promt('Pick another number')
+var answer = num1 + num2
 
-var text = "";
-var x;
-for (x in person) {
-  text += (person[x] + ' ');
-}
-
-document.getElementById('test').innerHTML = text
+document.getElementById('test').innerHTML = answer
 </script>
 
 </body>
